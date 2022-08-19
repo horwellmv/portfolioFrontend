@@ -1,0 +1,27 @@
+img{
+    width: 100%;
+    box-shadow: 0px 4px 20px 6px grey;
+}
+
+.row{
+    padding: 25px;
+}
+
+#descripcion{
+    text-align: justify;
+    margin-top: -60px;
+}
+
+#usuario{
+    font-weight: bold;
+}
+
+#profesion{
+    font-style: italic;
+}
+
+#foto{
+    border-radius: 145px 90px;
+    box-shadow: 3px 3px 3px gray;
+    margin-top: -110px;
+}

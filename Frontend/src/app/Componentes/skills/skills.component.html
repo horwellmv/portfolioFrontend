@@ -1,1 +1,22 @@
-<p>skills works!</p>
+<!--Modulo Skills, usando Componentes de NgCircle -->
+
+<div class="row">
+    <div class="col-1"></div>
+    <h3 class="col">Habilidades</h3>
+</div>
+
+<div class="container-fluid row row-cols-1 row-cols-md-3 g-4">
+    <div class="text-center">      <!--Aqui incluir el *ngFor -->  
+        <circle-progress
+            [percent]="90"
+            [radius]="100"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="1000"
+        ></circle-progress>           
+    </div>
+</div>
+ 

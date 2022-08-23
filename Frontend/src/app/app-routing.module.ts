@@ -6,6 +6,8 @@ import { EducacionComponent } from './Componentes/educacion/educacion.component'
 import { ExperienciaComponent } from './Componentes/experiencia/experiencia.component';
 import { ProyectosComponent } from './Componentes/proyectos/proyectos.component';
 import { SkillsComponent } from './Componentes/skills/skills.component';
+import { LoginComponent } from "./Componentes/Compartidos/login/login.component";
+
 
 const routes: Routes = [
   {path: "home", component: HomeComponent},
@@ -13,6 +15,7 @@ const routes: Routes = [
   {path: "experiencia", component: ExperienciaComponent},
   {path: "proyectos", component: ProyectosComponent},
   {path: "skills", component: SkillsComponent},
+  {path: "login", component: LoginComponent},
   {path: "**", component: HomeComponent}
 ];
 

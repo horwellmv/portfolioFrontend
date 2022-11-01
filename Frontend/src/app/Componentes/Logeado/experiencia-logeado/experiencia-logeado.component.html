@@ -1,0 +1,209 @@
+<div class="container">
+
+    <h2 class="display-6 mb-5">Experiencia laboral</h2>
+
+    <!-- Boton para modal y agregar nueva experiencia -->
+    <div class="container mt-3">
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal1">
+            Nueva Experiencia
+        </button>
+    </div>
+
+    <!-- mi Modal -->
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Agregar experiencia laboral</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3 mt-3">
+                            <label for="Titulo" class="form-label">Empresa</label>
+                            <input type="text" class="form-control" placeholder="La PC S.A">
+                        </div>
+                        <div class="col-md-4 mb-3 mt-3">
+                            <label for="Titulo" class="form-label">Cargo</label>
+                            <input type="text" class="form-control" placeholder="Dev frontend">
+                        </div>
+                        <div class="col-md-3 mb-3 mt-3">
+                            <label for="año" class="form-label">Año</label>
+                            <select class="form-select">
+                                <option selected>Año</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 form-check-label mb-3 mt-3 ">
+                        <label for="sobreMi">Descripcion del proyecto</label>
+                        <textarea class="form-control" placeholder="Tecnologias usadas, objetivo, aplicacion, etc"
+                            rows="5"></textarea>
+                    </div>
+
+
+                    <div class="row col-md-12">
+                        <figure class="figure col-md-6">
+                            <img src="../../../../assets/Picturs/proyecto.jpg" class="img-thumbnail" alt="...">
+                            <figcaption class="figure-caption">Empresa</figcaption>
+                        </figure>
+                        <div class="col-md-6 mb-3">
+                            <label for="adjuntar" class="form-label">Logo</label>
+                            <input class="form-control form-control-sm" type="file">
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Mostrar / Ocultar
+                        </label>
+                    </div>
+
+
+                </div>
+
+                <!-- Modal footer -->
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Componente experiencia, -->
+
+<div class="container mt-5">
+
+    <!--Tarjeta boostrap horizontal -->
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://i1.wp.com/www.blogdehumor.com/wp-content/2011/09/gato_trabajando.jpg"
+                    class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">(Puesto o cargo)</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">agosto 2000</small></p>
+                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#myModal2">Editar</button>
+                    <div class="modal fade" id="myModal2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                
+                                <!-- Modal Editar Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Agregar experiencia laboral</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                
+                                <!-- Modal Editar body -->
+                                <div class="modal-body">
+                
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3 mt-3">
+                                            <label for="Titulo" class="form-label">Empresa</label>
+                                            <input type="text" class="form-control" placeholder="La PC S.A">
+                                        </div>
+                                        <div class="col-md-4 mb-3 mt-3">
+                                            <label for="Titulo" class="form-label">Cargo</label>
+                                            <input type="text" class="form-control" placeholder="Dev frontend">
+                                        </div>
+                                        <div class="col-md-3 mb-3 mt-3">
+                                            <label for="año" class="form-label">Año</label>
+                                            <select class="form-select">
+                                                <option selected>Año</option>
+                                                <option>2010</option>
+                                                <option>2011</option>
+                                                <option>2012</option>
+                                                <option>2013</option>
+                                                <option>2014</option>
+                                                <option>2015</option>
+                                                <option>2016</option>
+                                                <option>2017</option>
+                                                <option>2018</option>
+                                                <option>2019</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-md-12 form-check-label mb-3 mt-3 ">
+                                        <label for="sobreMi">Descripcion del proyecto</label>
+                                        <textarea class="form-control" placeholder="Tecnologias usadas, objetivo, aplicacion, etc"
+                                            rows="5"></textarea>
+                                    </div>
+                
+                
+                                    <div class="row col-md-12">
+                                        <figure class="figure col-md-6">
+                                            <img src="../../../../assets/Picturs/proyecto.jpg" class="img-thumbnail" alt="...">
+                                            <figcaption class="figure-caption">Empresa</figcaption>
+                                        </figure>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="adjuntar" class="form-label">Logo</label>
+                                            <input class="form-control form-control-sm" type="file">
+                                        </div>
+                                    </div>
+                
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Mostrar / Ocultar
+                                        </label>
+                                    </div>
+                
+                
+                                </div>
+                
+                                <!-- Modal Editar footer -->
+                
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                
+                
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

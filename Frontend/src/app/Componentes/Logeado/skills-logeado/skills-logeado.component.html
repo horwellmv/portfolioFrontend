@@ -1,0 +1,182 @@
+<div class="container">
+    <h2 class="display-6">Skills</h2>
+
+    <!-- Boton para modal y agregar educacion -->
+    <div class="container mt-3">
+        <button type="button" class="btn btn-dark mt-5 mb-5" data-bs-toggle="modal" data-bs-target="#myModal1">
+            Nueva Skill
+        </button>
+    </div>
+    <div>
+        <div class="container row row-cols-1 row-cols-md-3 g-4">
+            <div class="text-center">
+                <!--Aqui incluir el *ngFor -->
+                <circle-progress 
+                    [percent]="90" 
+                    [radius]="100" 
+                    [outerStrokeWidth]="16" 
+                    [innerStrokeWidth]="8"
+                    [outerStrokeColor]="'#78C000'" 
+                    [innerStrokeColor]="'#C7E596'" 
+                    [animation]="true"
+                    [animationDuration]="1000">
+                </circle-progress>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Editar</button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+    </div>
+
+    <!-- mi Modal -->
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Agregar Skill</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="row">
+                            <div class="col-md-12 mb-3 mt-3">
+                                <label for="Titulo" class="form-label">Habilidad / Tecnologia / Idioma</label>
+                                <input type="text" class="form-control" placeholder="Ingles">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mt-3">
+                            <div class="col-md-4">
+                                <label for="Seniority" class="form-label">Progreso en %</label>
+                                <select class="form-select">
+                                    <option selected>Porcentaje</option>
+                                    <option>5</option>
+                                    <option>25</option>
+                                    <option>50</option>
+                                    <option>75</option>
+                                    <option>100</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <!-- Cargar imagen de Skill-->
+                        <div>
+                            <h4 class="mt-5 mb-3">Cargar logo tecnologia</h4>
+
+
+                            <div class="row col-md-12">
+                                <figure class="figure col-md-4">
+                                    <img src="../../../../assets/Picturs/Estudios.jfif" class="img-thumbnail" alt="...">
+
+                                </figure>
+                                <div class="col-md-8 mb-3">
+                                    <label for="adjuntar" class="form-label">Elige el logo de tus
+                                        skills.</label>
+                                    <input class="form-control form-control-sm" type="file">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Checkbox mostrar / ocultar skill-->
+                        <div class="col-12">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Mostrar / Ocultar
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mi Modal 2 Editar-->
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Editar 2 Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Editar Skill</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal Editar 2 body -->
+                <div class="modal-body">
+                    <form class="row g-3">
+
+                        <div class="row">
+                            <div class="col-md-12 mb-3 mt-3">
+                                <label for="Titulo" class="form-label">Habilidad / Tecnologia / Idioma</label>
+                                <input type="text" class="form-control" placeholder="Ingles">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mt-3">
+                            <div class="col-md-4">
+                                <label for="Seniority" class="form-label">Progreso en %</label>
+                                <select class="form-select">
+                                    <option selected>Porcentaje</option>
+                                    <option>5</option>
+                                    <option>25</option>
+                                    <option>50</option>
+                                    <option>75</option>
+                                    <option>100</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <!-- Cargar imagen de Skill-->
+                        <div>
+                            <h4 class="mt-5 mb-3">Cargar logo tecnologia</h4>
+
+
+                            <div class="row col-md-12">
+                                <figure class="figure col-md-4">
+                                    <img src="../../../../assets/Picturs/Estudios.jfif" class="img-thumbnail" alt="...">
+
+                                </figure>
+                                <div class="col-md-8 mb-3">
+                                    <label for="adjuntar" class="form-label">Elige el logo de tus
+                                        skills.</label>
+                                    <input class="form-control form-control-sm" type="file">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Checkbox mostrar / ocultar skill-->
+                        <div class="col-12">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Mostrar / Ocultar
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal editar 2 footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
